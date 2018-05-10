@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.harinder.dvm.MapsActivity" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/addt"
+                android:scaleType="fitXY"
+                android:id="@+id/fab"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@id/map"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="10dp"
+                android:elevation="6dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menue"
+            android:layout_margin="10dp"
+            android:id="@+id/menu"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:scrollbarSize="2dp"
+            android:id="@+id/scrollView"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Rice"
+                android:id="@+id/delhi"
+                android:textColor="#ffffff"
+                android:clickable="true"
+                android:fontFamily="@string/common_google_play_services_update_title"
+                android:background="@drawable/orange"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Wheat"
+                    android:id="@+id/haryana"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/greenbtn"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Maize"
+                    android:id="@+id/maharashtra"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/blue" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Gram"
+                    android:id="@+id/punjab"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/pink" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Arhar"
+                    android:id="@+id/up"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/voilet" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Moong"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/goa"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/yellow" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Ground Nuts"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tamilnadu"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/othergreen" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Mustard"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/himachal"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily= "@string/common_google_play_services_update_title"
+                    android:background="@drawable/otherblue" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Cotton"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/uttrakhand"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/darkpink" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Sugarcane"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/jnk"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:fontFamily="@string/common_google_play_services_update_title"
+                    android:background="@drawable/darkbrown" />
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

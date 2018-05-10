@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1050267536587",
+    "firebase_url": "https://dvmfirebaseproject-b0ea0.firebaseio.com",
+    "project_id": "dvmfirebaseproject-b0ea0",
+    "storage_bucket": "dvmfirebaseproject-b0ea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050267536587:android:bb78d84305cdd612",
+        "android_client_info": {
+          "package_name": "com.harinder.dvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050267536587-6b9u7vhugmr2a7asnvt7k06ke41d979n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harinder.dvm",
+            "certificate_hash": "d194d19a83c7b41319a1dce1796b197ba3650096"
+          }
+        },
+        {
+          "client_id": "1050267536587-rhdnb7g5n0n2kvtdu3gqtfes463ik3ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEsHJyJNpAbkzWv5cx4TqZ0Rvf4Wft6SI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050267536587-rhdnb7g5n0n2kvtdu3gqtfes463ik3ui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

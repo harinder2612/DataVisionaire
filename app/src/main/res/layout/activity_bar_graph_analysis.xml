@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/customLabels"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/xaxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="X axis: Cost of Cultivation per Hectare in Ten Thousands"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="16dp"
+            android:text="Y axis: States Of India"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/checkboxes"
+        android:id="@+id/customLabels"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#D62728"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rice"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#2CA02C"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Wheat"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#FF7F0E"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Maize"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#9062BB"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gram"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#17BECF"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cotton    "
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#C89933"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Arhar"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#1F77B4"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Moong"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#2CA02C"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ground"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#8C564B"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mustard"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="#EC058E"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cane"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:textColor="#0d0d0d"
+                android:textSize="14dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/checkboxes">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barriceCheck"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rice"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barwheatCheck"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheat"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barmaizeCheck"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maize"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/bargramCheck"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gram"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barcotton"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cotton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/bararharCheck"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arhar"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barmoongCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moong"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/bargroundCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ground"/>
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barmustardCheck"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mustard"/>
+
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:id="@+id/barcane"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cane"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Draw Graph"
+            android:background="@drawable/graphbuttonshape"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:id="@+id/bardrwaGraph"/>
+
+    </LinearLayout>
+</RelativeLayout>

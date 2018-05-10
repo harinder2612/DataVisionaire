@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.harinder.dvm.GraphAnalyzer">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/sepLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X axis: Crop Production in Million Tonnes"
+            android:paddingLeft="16dp"
+            android:id="@+id/xaxis"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Y axis: Years (2005 and above)"
+            android:paddingLeft="16dp"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/riceCheck"
+        android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/wheatCheck"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheat"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/maizeCheck"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maize"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/gramCheck"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gram"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/arharCheck"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arhar"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/moongCheck"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moong"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/groundCheck"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ground"/>
+
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/mustardCheck"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mustard"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Draw Graph"
+        android:background="@drawable/graphbuttonshape"
+        android:layout_marginTop="6dp"
+        android:textColor="#ffffff"
+        android:id="@+id/drwaGraph"/>
+
+    </LinearLayout>
+</LinearLayout>
